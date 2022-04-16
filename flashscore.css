@@ -1,0 +1,271 @@
+body {
+    margin: 0;
+    background-color: #232323;
+    color: white;
+    font-family: Tahoma;
+    font-size: 11px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.header {
+    background-color: rgb(0, 64, 109);
+    height: 38px;
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+}
+
+.home-link {
+    background-image: url(img/flashscore_ru.svg);
+    background-size: auto 24px;
+    height: 24px;
+    width: 182px;
+}
+
+.tournament-header {
+    background-color: rgb(45, 45, 45);
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8px;
+}
+
+.tournament-name {
+    display: flex;
+    align-items: center;
+}
+
+.flag {
+    height: 14px;
+    width: 21px;
+    padding-right: 8px;
+}
+
+.pidori {
+    margin-left: 2px;
+    line-height: 17px;
+}
+
+.year-logo {
+    background-color: rgb(0, 98, 144);
+    height: 24px;
+    width: 90px;
+    display: flex;
+    align-items: center;
+}
+
+.year-logo:hover {
+    background-color: #002844;
+    cursor: pointer;
+}
+
+.year-logo::after {
+    content: "\1F893";
+    color: #a3a3a3;
+    font-size: 20px;
+    margin-top: 13px;
+}
+
+.year-link {
+    font-size: 11px;
+    padding: 4px 8px;
+}
+
+.tournament-types {
+    display: flex;
+}
+
+.main-tournament {
+    background-color: rgb(0, 98, 144);
+    width: 109px;
+    height: 21px;
+    padding: 4px 4px;
+    margin-left: 10px;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+.pre-season-tournament {
+    background-color: #414141;
+    width: 80px;
+    height: 21px;
+    padding: 4px 4px;
+    margin-left: 1px;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+.pre-season-tournament:hover {
+    background-color: #353535;
+    cursor: pointer;
+}
+
+.tournament-dates {
+    display: flex;
+}
+
+.tables {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #414141;
+    width: 62px;
+    height: 28px;
+    margin-left: 10px;
+    font-size: 11px;
+}
+
+.tables:hover {
+    background-color: #353535;
+    cursor: pointer;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #414141;
+    width: 53px;
+    height: 28px;
+    margin-left: 1px;
+    font-size: 11px;
+}
+
+.form:hover {
+    background-color: #353535;
+    cursor: pointer;
+}
+
+.more-less {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #414141;
+    width: 101px;
+    height: 28px;
+    margin-left: 1px;
+    font-size: 11px;
+}
+
+.more-less:hover {
+    background-color: #353535;
+    cursor: pointer;
+}
+
+.scorers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 98, 144);
+    width: 93px;
+    height: 28px;
+    margin-left: 1px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.scorers-filters {
+    display: flex;
+}
+
+.team-filter {
+    display: flex;
+    align-items: center;
+    width: 33.33%;
+    height: 16px;
+    border: 8px solid #1065a1;
+    font-size: 11px;
+    padding: 4px 8px;
+}
+
+.team-filter::after {
+    content: "\1F893";
+    color: #a3a3a3;
+    font-size: 20px;
+    margin-top: 13px;
+    margin-left: auto;
+}
+
+.country-filter {
+    display: flex;
+    align-items: center;
+    width: 33.33%;
+    height: 16px;
+    border: 8px solid #1065a1;
+    border-left: 1px;
+    font-size: 11px;
+    padding: 4px 8px;
+}
+
+.country-filter::after {
+    content: "\1F893";
+    color: #a3a3a3;
+    font-size: 20px;
+    margin-top: 13px;
+    margin-left: auto;
+}
+
+.position-filter {
+    display: flex;
+    align-items: center;
+    width: 33.33%;
+    height: 16px;
+    border: 8px solid #1065a1;
+    border-left: 1px;
+    font-size: 11px;
+    padding: 4px 8px;
+}
+
+.position-filter::after {
+    content: "\1F893";
+    color: #a3a3a3;
+    font-size: 20px;
+    margin-top: 13px;
+    margin-left: auto;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 32px 44% 44% 48px 48px 32px;
+}
+
+.wrapper>div {
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgb(57, 57, 57);
+}
+
+.wrapper>div:nth-child(-n+6) {
+    background-color: rgb(45, 45, 45);
+}
+
+.wrapper>div:nth-child(6n+7) {
+    background-color: rgb(78, 78, 78);
+}
+
+.wrapper>div:nth-child(6n+2),
+.wrapper>div:nth-child(6n+3) {
+    padding-left: 8px;
+    justify-content: start;
+}
+
+.wrapper>div:first-child::after {
+    content: "\1F891";
+    color: rgb(0, 98, 144);
+    font-size: 20px;
+    margin-bottom: 18px;
+}
