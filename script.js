@@ -185,3 +185,5 @@ function renderPlayers() {
             players[i].s, players[i].a, players[i].g);
     }
 }
+
+renderPlayers();
